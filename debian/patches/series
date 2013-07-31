@@ -3,3 +3,4 @@
 201_etc2ps_paths.diff
 202_psf_8_paths.diff
 205_applevolumes_default_homedir.diff
+corgi-12834.patch

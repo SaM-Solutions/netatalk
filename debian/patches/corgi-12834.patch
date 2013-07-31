@@ -1,0 +1,12 @@
+diff --git a/etc/afpd/afp_zeroconf.c b/etc/afpd/afp_zeroconf.c
+index d6fa657..08e8cfa 100644
+--- a/etc/afpd/afp_zeroconf.c
++++ b/etc/afpd/afp_zeroconf.c
+@@ -27,6 +27,7 @@ void zeroconf_register(const AFPConfig *configs)
+ #if defined (HAVE_AVAHI)
+   LOG(log_debug, logtype_afpd, "Attempting to register with mDNS using Avahi");
+ 
++	av_zeroconf_unregister();
+ 	av_zeroconf_register(configs);
+ #endif
+ }
